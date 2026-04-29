@@ -1,7 +1,11 @@
-div[class^="col"] {
+.row div[class^="col"] {
   border: 1px solid red;
 }
 
 div[class^="row"] {
   border: 1px solid blue;
+}
+
+.form-control::placeholder {
+  color: #6c757d;
 }
