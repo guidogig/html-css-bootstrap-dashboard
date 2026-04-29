@@ -1,0 +1,7 @@
+div[class^="col"] {
+  border: 1px solid red;
+}
+
+div[class^="row"] {
+  border: 1px solid blue;
+}
