@@ -41,12 +41,13 @@
       </div>
     </nav>
 
-    <div class="container p-1 p-md-2 p-lg-3">
+    <div class="container p-4 p-md-2 p-lg-3">
       <div class="row gx-5">
+
         <div class="col-12 col-lg-9">
           <div class="row align-items-center">
-            <div class="col">
-              <h2 class="display-6 mb-0">Catalogo Libri</h2>
+            <div class="col ps-0">
+              <h2 class="display-6">Catalogo Libri</h2>
             </div>
             <div class="col d-flex justify-content-end pe-0">
               <button type="button" class="btn btn-primary">Aggiungi Libro</button>
@@ -57,7 +58,7 @@
               <thead>
                 <tr>
                   <th scope="col">Titolo</th>
-                  <th scope="col">Data prestito</th>
+                  <th scope="col" class="d-none d-sm-table-cell">Data prestito</th>
                   <th scope="col">Stato</th>
                   <th scope="col">Azioni</th>
                 </tr>
@@ -65,7 +66,7 @@
               <tbody>
                 <tr>
                   <td>I Pilastri della Terra</td>
-                  <td>-</td>
+                  <td class="d-none d-sm-table-cell">-</td>
                   <td><span class="badge text-bg-success rounded-pill p-2">Disponibile</span></td>
                   <td>
                     <div role="group" aria-label="Azioni libro">
@@ -80,20 +81,71 @@
                 </tr>
                 <tr>
                   <td>I promessi Sposi</td>
-                  <td>-</td>
+                  <td class="d-none d-sm-table-cell">-</td>
                   <td><span class="badge text-bg-success rounded-pill p-2">Disponibile</span></td>
-                  <td>pulsantini</td>
+                  <td>
+                    <div role="group" aria-label="Azioni libro">
+                      <button type="button" class="btn btn-outline-secondary btn-sm">
+                        <i class="bi bi-pencil-fill"></i>
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary btn-sm">
+                        <i class="bi bi-trash3-fill"></i>
+                      </button>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>Il Signore degli anelli</td>
-                  <td>18/10/2023</td>
+                  <td class="d-none d-sm-table-cell">18/10/2023</td>
                   <td><span class="badge text-white bg-warning rounded-pill p-2">In prestito</span></td>
-                  <td>pulsantini</td>
+                  <td>
+                    <div role="group" aria-label="Azioni libro">
+                      <button type="button" class="btn btn-outline-secondary btn-sm">
+                        <i class="bi bi-pencil-fill"></i>
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary btn-sm">
+                        <i class="bi bi-trash3-fill"></i>
+                      </button>
+                    </div>
+                  </td>
                 </tr>
+                <tr>
+                  <td>Harry Potter e la Pietra Filosofale</td>
+                  <td class="d-none d-sm-table-cell">-</td>
+                  <td><span class="badge text-bg-success rounded-pill p-2">Disponibile</span></td>
+                  <td>
+                    <div role="group" aria-label="Azioni libro">
+                      <button type="button" class="btn btn-outline-secondary btn-sm">
+                        <i class="bi bi-pencil-fill"></i>
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary btn-sm">
+                        <i class="bi bi-trash3-fill"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <tr>
+                  <td>Il Codice da Vinci</td>
+                  <td class="d-none d-sm-table-cell">-</td>
+                  <td><span class="badge text-bg-danger rounded-pill p-2">Non disponibile</span></td>
+                  <td>
+                    <div role="group" aria-label="Azioni libro">
+                      <button type="button" class="btn btn-outline-secondary btn-sm">
+                        <i class="bi bi-pencil-fill"></i>
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary btn-sm">
+                        <i class="bi bi-trash3-fill"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
               </tbody>
             </table>
           </div>
         </div>
+
         <div class="col-12 col-lg-3">
           <div class="row mt-xs-3 mt-">
             <div class="col">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, vitae.</div>
@@ -102,6 +154,7 @@
             <div class="col">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, vitae.</div>
           </div>
         </div>
+
       </div>
     </div>
 
