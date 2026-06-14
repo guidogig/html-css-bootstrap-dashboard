@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Bootstrap dashboard</title>
     <!-- Bootstrap 5.3.8-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
     <!-- Bootrsap Icons -->
@@ -11,10 +11,11 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="./img/duck.png" alt="Duck logo" height="40px" /></a>
+        <a class="navbar-brand" href="index.html"><img src="./img/duck.png" alt="Duck logo" height="40" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,6 +42,7 @@
       </div>
     </nav>
 
+    <!-- contenitore principale -->
     <div class="container p-4 p-md-2 p-lg-3">
       <div class="row gx-5">
         <div class="col-12 col-lg-9">
@@ -49,7 +51,7 @@
               <h2 class="display-6">Catalogo Libri</h2>
             </div>
             <div class="col d-flex justify-content-end pe-0">
-              <button type="button" class="btn btn-primary">Aggiungi Libro</button>
+              <a type="button" class="btn btn-primary" href="./new-book.html">Aggiungi Libro</a>
             </div>
           </div>
           <div class="row">
@@ -123,7 +125,6 @@
                     </div>
                   </td>
                 </tr>
-                <tr></tr>
                 <tr>
                   <td>Il Codice da Vinci</td>
                   <td class="d-none d-sm-table-cell">-</td>
@@ -139,7 +140,6 @@
                     </div>
                   </td>
                 </tr>
-                <tr></tr>
               </tbody>
             </table>
           </div>
